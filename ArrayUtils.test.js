@@ -18,11 +18,11 @@ test("Test isEmpty when not empty", () =>{
 test("Test append", () =>{
     let util = new ArrayUtils();
     let original = [4, 5, 1, 9, 3, 6, 7, 8, 2, 4];
+    let originalLength = original.length;
     let value = 0;
 
     let actual = util.append(original, value);
-
-    expect(value).toEqual(actual[actual.length + 1]);
+    expect(actual[originalLength]).toEqual(value);
 
 });
 
@@ -175,9 +175,8 @@ test("Test remove duplicate value", () =>{
 test("Test reverse", () =>{
     let util = new ArrayUtils();
     let original = [4, 5, 1, 9, 3, 6, 7, 8, 2, 4];
-    let value = 4;
 
-    let actual = util.remove(original, value);
+    let actual = util.reverse(original);
     let expected = [4, 2, 8, 7, 6, 3, 9, 1, 5, 4];
 
     expect(actual).toEqual(expected);
