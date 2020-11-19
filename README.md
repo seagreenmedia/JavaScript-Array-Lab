@@ -11,5 +11,5 @@ You will make you very own ArrayUtil class! Implement the following methods with
   <li><code>fill(int[] original, int value)</code> Sets all the positions in an array to the given value and returns</li>
   <li><code>indexOf(original, value)</code> Returns the index of the first occurrence of the value in the array, -1 if the value is not found</li>
   <li><code>remove(original, value)</code> Copies the array, removes the first occurrence of the value in the array, and returns</li>
-  <li><code>reverse(original)</code> Reverses the order of the elements in the array/li>
+  <li><code>reverse(original)</code> Reverses the order of the elements in the array</li>
 </ul>
