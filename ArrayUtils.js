@@ -1,21 +1,44 @@
-class ArrayUtils{
+class ArrayUtils {
 
-    isEmpty(array){return false;}
+    let ArrayUtils = ["Peace", "Love", "Light"];
 
-    append(original, value){return original;}
+    //isEmpty
+    let isEmpty = [];
+    isEmpty === ArrayUtils;
 
-    clone(original){return original;}
+    //append
+    ArrayUtils.push("Freedom");
 
-    subArray(original, from, to){return original;}
+    //clone
+    identity = (x) => x;
+    ArrayUtilsCopy = ArrayUtils.map(identity);
 
-    equals(arr1, arr2){return false;}
+    //subArray
+    let y = +prompt("Pick a number between 0 and 2");
+    let z = +prompt("Pick another number between 0 and 2");
+    subArray = ArrayUtils.slice(y, z + 1);
 
-    fill(original, value){}
+    //equals
+    function arraysEqual(arr1, arr2) {
+        if (arr1 === arr2)
+            return true;
+        if (arr1 == null || arr2 == null)
+            return false;
+        if (arr1.length !== arr2.length)
+            return false;
+    }
 
-    indexOf(original, value){return -1;}
+    //fill
+    ArrayUtils.fill(prompt("What's your favorite color?"));
 
-    remove(original, value){return original;}
+    //indexOf
+    ArrayUtils.indexOf("Love");
 
-    reverse(original){}
-    
-}
+    //remove
+
+    return ArrayUtils;
+    remove(original, value); { return original; };
+
+
+    //reverse
+    reverse(original); {};
