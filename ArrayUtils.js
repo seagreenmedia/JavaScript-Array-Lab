@@ -14,20 +14,17 @@ class ArrayUtils {
         }
     }
 
-    append(value) {
+    append(original, value) {
         return original.push(value);
     }
 
-    getClone() {
-        let identity = (original) => original
-        let ArrayUtilsCopy = ArrayUtils.map(identity);
-        return ArrayUtilsCopy;
+    getClone(original) {
+        clone = [...original];
+        return clone;
     }
 
-    getSubArray(y, z) {
-        let y
-        let z
-        let subArray = ArrayUtils.slice(y, z + 1);
+    getSubArray(original, y, z) {
+        let subArray = original.slice(y, z + 1);
         return subArray;
     }
 
@@ -41,23 +38,21 @@ class ArrayUtils {
     }
 
     fillArray(original, value) {
-        return ArrayUtils.fill(value);
+        return original.fill(value);
     }
 
     indexOf(original, value) {
-        return ArrayUtils.indexOf(value);
+        return original.indexOf(value);
     }
 
     remove(original, value) {
-        let copy = stats;
+        let copy = original;
         for (let i = 0; i < copy.length; i++) {
             if (copy[i] === value) {
-                copy.splice(i, 1);
+                newCopy += copy.splice(i, 1);
             }
         }
-        let value = 6;
-        stats.slice(value);
-        console.log(stats);
+        return newCopy;
     }
 
     reverseArray([original]) {
